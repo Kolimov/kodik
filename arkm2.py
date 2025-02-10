@@ -22,7 +22,7 @@ proxies = {
 api_secret_bytes = base64.b64decode(API_SECRET)
 
 
-EXPIRES = (int(time.time()) + 300) * 1000000  # 300 секунд * 1 000 000 для микросекунд
+EXPIRES = (int(time.time()) + 300) * 1000000  
 
 #подпись(тут проблема?)
 message = f"{API_KEY}{EXPIRES}{METHOD}{REQUEST_PATH}{BODY}"
